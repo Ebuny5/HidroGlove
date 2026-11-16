@@ -1,0 +1,8 @@
+{
+  "name": "HydroGlove",
+  "description": "Interactive 3D concept, clinical feasibility explorer, session simulator, and 8-step prototype build guide for a portable tap-water iontophoresis glove.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

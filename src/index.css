@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  }
+
+  .font-mono-tech {
+    font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  input[type="range"] {
+    accent-color: #0f766e;
+  }
+}
+
+.hotspot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #0f766e;
+  color: #0f766e;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.14);
+  transition: opacity 0.2s ease, transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.hotspot:hover,
+.hotspot.active {
+  background: #0f766e;
+  color: #ffffff;
+  transform: translate(-50%, -50%) scale(1.14);
+}
+
+.hotspot.hidden-spot {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.scroll-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
